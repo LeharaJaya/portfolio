@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects & Blogs - Lehara Jayasena</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background-color: #faf8fc;
+      color: #1c1c1c;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #6d3a7a;
+      padding: 20px 40px;
+    }
+
+    nav .logo {
+      height: 40px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #fff;
+    }
+
+    h2.projectheading {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 2.5rem;
+      color: #6d3a7a;
+    }
+
+    #blog {
+      padding: 40px 60px;
+    }
+
+    .blog-heading {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .blog-heading span {
+      color: #6d3a7a;
+      font-size: 1rem;
+    }
+
+    .blog-heading h3 {
+      font-size: 2rem;
+      color: #1c1c1c;
+    }
+
+    .blog-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .blog-box {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      max-width: 350px;
+      transition: transform 0.3s ease;
+    }
+
+    .blog-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .blog-img img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .blog-text {
+      padding: 20px;
+    }
+
+    .blog-text span {
+      font-size: 0.9rem;
+      color: #6d3a7a;
+    }
+
+    .blog-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #1c1c1c;
+      margin: 10px 0;
+      display: block;
+    }
+
+    .blog-text p {
+      font-size: 0.95rem;
+      color: #444;
+      margin-bottom: 15px;
+    }
+
+    .projects {
+      padding: 40px 60px;
+    }
+
+    .project-heading {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .project-heading span {
+      color: #6d3a7a;
+      font-size: 1rem;
+    }
+
+    .project-heading h3 {
+      font-size: 2rem;
+      color: #1c1c1c;
+    }
+
+    .timeline-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .timeline-item {
+      background-color: #e5d3f2;
+      border-left: 5px solid #6d3a7a;
+      padding: 20px 25px;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    }
+
+    .timeline-date {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #6d3a7a;
+      margin-bottom: 10px;
+    }
+
+    .timeline-content h3 a {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #1c1c1c;
+      text-decoration: none;
+    }
+
+    .timeline-content p {
+      color: #444;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+      background-color: #6d3a7a;
+      color: #fff;
+      position: relative;
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <nav>
+      <img src="LJ_logo.jpeg" class="logo">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="projects.html">PROJECTS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <h2 class="projectheading">Projects & Blogs</h2>
+
+    <section class="projects" id="projects">
+      <div class="project-heading">
+        <span>My recent Projects</span>
+        <h3>My Projects</h3>
+      </div>
+      <div class="timeline-items">
+        <div class="timeline-item">
+          <div class="timeline-date">Project 1</div>
+          <div class="timeline-content">
+            <h3><a href="#">Lehara Horizons</a></h3>
+            <p>A React-based real estate search platform implementing clean UI components and filterable user search features.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Project 2</div>
+          <div class="timeline-content">
+            <h3><a href="https://github.com/LeharaJaya/Bluenest_website">Blue Nest</a></h3>
+            <p>A marine conservation website featuring educational content and imagery to promote awareness.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Project 3</div>
+          <div class="timeline-content">
+            <h3><a href="https://github.com/LeharaJaya/PlaneManagementSystem">Plane Management System</a></h3>
+            <p>A Java system for managing airline operations including ticketing, scheduling, and passenger information.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Project 4</div>
+          <div class="timeline-content">
+            <h3><a href="https://github.com/LeharaJaya/Digital-clock">Digital Clock</a></h3>
+            <p>A Java-based desktop digital clock with real-time timekeeping and clean UI.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Project 5</div>
+          <div class="timeline-content">
+            <h3><a href="https://github.com/LeharaJaya/Hotel-Management-System">Hotel Management System</a></h3>
+            <p>A Java program simulating hotel operations, including guest check-ins, room management, and reporting.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Project 6</div>
+          <div class="timeline-content">
+            <h3><a href="#">Real-time Ticketing System</a></h3>
+            <p>A full-stack ticketing app built with React and Spring Boot, enabling instant ticket updates and responsive UI.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Project 7</div>
+          <div class="timeline-content">
+            <h3><a href="#">MaterniFy Mobile App</a></h3>
+            <p>AI-powered maternal health app built with React, Node.js, and MongoDB, offering personalized care and real-time medical guidance.</p>
+          </div>
+        </div>
+        <!-- ADD THIS INSIDE <div class="timeline-items"> -->
+        <div class="timeline-item">
+            <div class="timeline-date">Project 8</div>
+            <div class="timeline-content">
+            <h3><a href="#">Bookstore Management System</a></h3>
+            <p>Java RESTful API simulating an online bookstore with clean, scalable endpoints.</p>
+            </div>
+        </div>
+  
+      </div>
+    </section>
+
+    <section id="blog">
+      <div class="blog-heading">
+        <span>My recent Posts</span>
+        <h3>My Blogs</h3>
+      </div>
+      <div class="blog-container">
+        <div class="blog-box">
+          <div class="blog-img">
+            <img src="blog-img3.jpg" alt="Blog">
+          </div>
+          <div class="blog-text">
+            <span>26th October 2024 / ACS</span>
+            <span class="blog-title">How AI is Changing the Future of Technology</span>
+            <p>This article explores how AI is transforming sectors including healthcare and finance, and shaping future technologies.</p>
+            <a href="https://www.simplilearn.com/future-of-artificial-intelligence-article">Read More</a>
+          </div>
+        </div>
+
+        <div class="blog-box">
+          <div class="blog-img">
+            <img src="blog-img1.png" alt="Blog">
+          </div>
+          <div class="blog-text">
+            <span>28th October 2024 / ACS</span>
+            <span class="blog-title">Understanding the Software Development Lifecycle</span>
+            <p>SDLC outlines the structured process of planning, creating, testing, and deploying software applications.</p>
+            <a href="https://aws.amazon.com/what-is/sdlc/">Read More</a>
+          </div>
+        </div>
+
+        <div class="blog-box">
+          <div class="blog-img">
+            <img src="html-vs-html5.jpeg" alt="Blog">
+          </div>
+          <div class="blog-text">
+            <span>30th October 2024 / ACS</span>
+            <span class="blog-title">Difference Between HTML and HTML5</span>
+            <p>Explore the improvements in HTML5 like native multimedia, semantic tags, and APIs for storage and geolocation.</p>
+            <a href="https://www.simplilearn.com/tutorials/html-tutorial/html-vs-html5">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Lehara Jayasena. All rights reserved.</p>
+  </footer>
+</body>
+</html>
